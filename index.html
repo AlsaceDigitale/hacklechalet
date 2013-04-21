@@ -13,6 +13,7 @@
     <meta property="og:url" content="http://www.hacklechalet.com" />
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
     <style type="text/css">
@@ -112,6 +113,48 @@
         height: 100%;
       }
 
+      .social {
+        list-style: none;
+        margin: 0;
+      }
+
+      .social li {
+        float: left;
+        margin-right: 20px;
+      }
+
+      .social li .rounded {
+        height: 50px;
+        width: 50px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        background-color: #CCC;
+        color: #282828;
+      }
+
+      .social li .rounded span {
+        font-size: 30px;
+        position: relative;
+      }
+      .social li .rounded.facebook span {
+        top: 10px;
+        left: 18px;
+      }
+      .social li .rounded.twitter span {
+        top: 10px;
+        left: 10px;
+      }
+      .social li .rounded.facebook:hover {
+        background-color: #3B5998;
+        color: white;
+      }
+      .social li .rounded.twitter:hover {
+        background-color: #4099FF;
+        color: white;
+      }
+      .social li a:hover {
+        text-decoration: none;
+      }
       @media screen and (max-width: 767px) {
         #concept h4 {
           margin-top: 20px;
@@ -185,8 +228,8 @@
           <li class="active"><a href="#concept">Concept</a></li>
           <li><a href="#register">Register</a></li>
           <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#rules">Rules</a></li>
-          <li><a href="#prizes">Prizes</a></li>
+          <li><a href="#rules">Rules & Prizes</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <h3 class="muted">
           <span class="black">Hack</span>le<span class="black">Chalet!</span>
@@ -333,7 +376,8 @@
 
       <div class="row-fluid marketing" id="rules">
         <div class="span12">
-          <h4>Rules</h4>
+          <h4>Rules & Prizes</h4>
+          <strong>Rules</strong>
           <p>
             <ul>
               <li>Teams can have from 2 to 5 members</li>
@@ -346,12 +390,7 @@
           <p>
             Judges will be announced soon...
           </p>
-        </div>
-      </div>
-
-      <div class="row-fluid marketing" id="prizes">
-        <div class="span12">
-          <h4>Prizes</h4>
+          <strong>Prizes</strong>
           <p>
             <ul>
               <li>1st place: 3 Google Nexus 10 tablets</li>
@@ -375,16 +414,34 @@
         </div>
       </div>
 
-      <div class="row-fluid marketing" id="sponsors">
-        <p>Want to be a sponsor? <a href="mailto:hacklechalet@alsacedigitale.org">Contact us!</a></p>
-        <p>For any questions: <a href="mailto:hacklechalet@alsacedigitale.org">hacklechalet@alsacedigitale.org</a></p>
+      <div class="row-fluid marketing" id="contact">
+        <div class="span12">
+          <h4>Contact</h4>
+          <p>Want to be a sponsor? <a href="mailto:hacklechalet@alsacedigitale.org">Contact us!</a></p>
+          <p>For any questions: <a href="mailto:hacklechalet@alsacedigitale.org">hacklechalet@alsacedigitale.org</a></p>
+        </div>
       </div>
 
-      <hr>
 
       <div class="footer">
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/HackLeChalet" target="_blank">
+              <div class="rounded facebook">
+                <span class="icomoon-facebook"></span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/HackLeChalet" target="_blank">
+              <div class="rounded twitter">
+                <span class="icomoon-twitter"></span>
+              </div>
+            </a>
+          </li>
+        </ul>
         <p>
-          Organized by <a href="http://www.alsacedigitale.org/">Alsace Digitale</a>. Join <a href="http://www.facebook.com/HackSXB">HackSXB</a>, our community initiative around software and hardward hacking.
+          Organized by <a href="http://www.alsacedigitale.org/" target="_blank">Alsace Digitale</a>. Join <a href="http://www.facebook.com/HackSXB" target="_blank">HackSXB</a>, our community initiative around software and hardward hacking.
         </p>
       </div>
 
