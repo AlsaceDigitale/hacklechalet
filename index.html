@@ -92,6 +92,7 @@
       }
       h3.muted {
         padding-left: 40px;
+        position: relative;
       }
       .masthead {
         margin-bottom: 20px;
@@ -242,7 +243,6 @@
     <div class="container-narrow" style="">
 
       <div class="masthead">
-        <img id="cloud" src="img/cloud.png" style="position: absolute; top:-42px; left: 20px; width:200px;" />
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#concept">Concept</a></li>
           <li><a href="#register">Register</a></li>
@@ -250,9 +250,10 @@
           <li><a href="#rules">Rules & Prizes</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <h3 class="muted">
+        <h3 class="muted" style="z-index:2;">
           <span class="black">Hack</span>le<span class="black">Chalet!</span>
         </h3>
+        <img id="cloud" src="img/cloud.png" style="position: absolute; top:-42px; left: 20px; width:200px;z-index:1;" />
       </div>
 
     </div>
