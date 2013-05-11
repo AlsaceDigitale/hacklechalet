@@ -22,7 +22,7 @@ File.open("_includes/attendees.html", 'w') {|f|
 
     name = [attendee_hsh["first_name"], attendee_hsh["last_name"]].compact.join(" ")
 
-    tags = attendee_hsh["answers"].last["answer"]["answer_text"].split(",")
+    tags = attendee_hsh["answers"].find_all{|x| x["answer"]["question_id"] == 3959643}.first["answer"]["answer_text"].split(",")
     email = attendee_hsh["email"]
     hash = Digest::MD5.hexdigest(email)
     gravatar_url = "http://www.gravatar.com/avatar/#{hash}"
