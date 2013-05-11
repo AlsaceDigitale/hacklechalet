@@ -1,0 +1,18 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    eventbrite-client (0.1.4)
+      httparty (~> 0.8.0)
+      tzinfo (~> 0.3.22)
+    httparty (0.8.3)
+      multi_json (~> 1.0)
+      multi_xml
+    multi_json (1.7.3)
+    multi_xml (0.5.3)
+    tzinfo (0.3.37)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  eventbrite-client

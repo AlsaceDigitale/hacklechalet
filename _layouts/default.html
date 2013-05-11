@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HackLeChalet &middot; 48 hours of hacking, in a chalet. Build things. Get prizes.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HackLeChalet: 48 hours of hacking, in a chalet. Build things. Get prizes.">
+    <meta name="author" content="AlsaceDigitale">
+    <meta property="og:title" content="HackLeChalet &middot; 48 hours of hacking, in a chalet. Build things. Get prizes." />
+    <meta property="og:description" content="HackLeChalet &middot; 48 hours of hacking, in a chalet. Build things. Get prizes. 24-26th May 2013. Organized by Alsace Digitale.">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://www.hacklechalet.com/img/logo_fb.png" />
+    <meta property="og:url" content="http://www.hacklechalet.com" />
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      table img {
+        width: 48px;
+        height: 48px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+      .container.header {
+        background-color: #cbe6f5; width: 100%; padding-top: 20px; padding-bottom: 20px;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 0;
+        text-align: center;
+
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+      .jumbotron .lead {
+        font-family: 'Gentium Book Basic', serif;
+        color: white;
+        padding-left: 20px;
+      }
+      .jumbotron .lead .date {
+        font-size: 68px;
+        line-height: 90px;
+        font-weight: bold;
+        /*font-style: italic;*/
+      }
+      .jumbotron .lead .desc {
+        font-size: 32px;
+        line-height: 32px;
+        font-style: italic;
+      }
+      /* Supporting marketing content */
+      .marketing {
+        margin: 20px 0;
+      }
+      .marketing h4 {
+        margin-bottom: 20px;
+      }
+      .marketing h4:before {
+        background-color: #cbe6f5;
+        content: "\00a0";
+        padding: 0 5px;
+        margin-right: 10px;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      .black {
+        color: black;
+      }
+      h3 {
+        font-family: 'Gentium Book Basic', serif;
+      }
+      h3.muted {
+        padding-left: 40px;
+        position: relative;
+        width: 190px;
+      }
+      .masthead {
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .iframe-rwd  {
+        position: relative;
+        padding-bottom: 65.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+      .iframe-rwd iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .nav-pills > .active > a, .nav-pills > .active > a:hover {
+        background-color: #005895;
+      }
+
+      a, a:hover, a:visited {
+        color: #005895;
+      }
+
+      a.button {
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        background-color: #005895;
+        color: white;
+        font-weight: bold;
+        padding:10px 15px;
+      }
+
+      a.button:hover {
+        text-decoration: none;
+        background-color: #A0AFB8;
+      }
+
+      .social {
+        list-style: none;
+        margin: 0;
+      }
+
+      .social li {
+        float: left;
+        margin-right: 20px;
+      }
+
+      .social li .rounded {
+        height: 50px;
+        width: 50px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        background-color: #CCC;
+        color: #282828;
+      }
+
+      .social li .rounded span {
+        font-size: 30px;
+        position: relative;
+      }
+      .social li .rounded.facebook span {
+        top: 10px;
+        left: 18px;
+      }
+      .social li .rounded.twitter span {
+        top: 10px;
+        left: 10px;
+      }
+      .social li .rounded.facebook:hover {
+        background-color: #3B5998;
+        color: white;
+      }
+      .social li .rounded.twitter:hover {
+        background-color: #4099FF;
+        color: white;
+      }
+      .social li a:hover {
+        text-decoration: none;
+      }
+      @media screen and (max-width: 767px) {
+        #concept h4 {
+          margin-top: 20px;
+        }
+        #cloud, a.github {
+          display: none;
+        }
+        h3.muted {
+          font-size: 48px;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+          position: static;
+        }
+        ul.nav {
+          float: left;
+          margin-bottom: 40px;
+          margin-right: 40px;
+        }
+        .masthead {
+          margin-bottom: 40px;
+          position: static;
+        }
+        .jumbotron .pull-left {
+          float: none;
+        }
+
+        .jumbotron .lead {
+          padding-left: 0;
+        }
+        .jumbotron .lead .date {
+          font-size: 48px;
+          line-height: 90px;
+          font-weight: bold;
+        }
+        .jumbotron .lead .desc {
+          font-size: 32px;
+          line-height: 32px;
+        }
+        ul.thumbnails li.span3 {
+          width: auto;
+          float: left;
+          padding-right: 20px;
+          padding-top: 20px;
+        }
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+    <a href="https://github.com/AlsaceDigitale/hacklechalet" target="_blank" class="github"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <div class="container-narrow" style="">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="#register">Register</a></li>
+          <li><a href="#attendees">Attendees</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#rules">Rules & Prizes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <h3 class="muted" style="z-index:2;">
+          <span class="black">Hack</span>le<span class="black">Chalet!</span>
+        </h3>
+        <img id="cloud" src="img/cloud.png" style="position: absolute; top:-42px; left: 20px; width:200px;z-index:1;" />
+      </div>
+
+    </div>
+
+    <div class="container header">
+
+      <div class="container-narrow">
+
+      <div class="jumbotron">
+        <div class="pull-left">
+          <img src="img/bird.png" />
+        </div>
+        <div class="pull-left">
+          <!--<h1>HackLeChalet!</h1>-->
+          <p class="lead">
+            <span class="date">May 24-26th.</span>
+            <br/>
+            <span class="desc">48 hours of hacking, in a chalet.</span>
+            <br/>
+            <span class="desc">Build things. Get prizes.</span>
+          </p>
+          <!-- <a class="btn btn-large btn-success" href="#">Sign up today</a> -->
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+      </div>
+
+    </div>
+    <div class="container-narrow">
+
+      <div class="row-fluid marketing" id="concept">
+        <div class="span4">
+          <h4>What?</h4>
+          <p>
+            HackLeChalet is a <strong>hackathon</strong> type of event, in a <strong>chalet</strong> (don't worry there's Internet).
+          </p>
+          <p>
+            You'll work in small teams, build the coolest project you can, and <strong>demo</strong> it to your peers.
+          </p>
+        </div>
+        <div class="span4">
+          <h4>When?</h4>
+          <p>
+            <strong>Start:</strong> Friday, May 24th, 7pm
+            <br/>
+            <strong>End:</strong> Sunday, May 26th, 5pm
+          </p>
+          <p>
+            We'll organize carpooling from the train stations of Strasbourg, Mulhouse and Colmar friday evening and sunday evening (we'll rent a bus if needed). Details will follow as we get informations from attendees.
+          </p>
+        </div>
+        <div class="span4">
+          <h4>Where?</h4>
+          <p>
+            <a href="http://www.fermeraie-odcvl.org/" target="_blank">La Fermeraie</a>
+            <br/>
+            <a href="http://goo.gl/maps/1Xw6Q" target="_blank" style="text-decoration:underline;color:black;">
+              10, chemin des Cigognes
+              <br/>
+              68140 Luttenbach
+              <br/>
+              France
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="iframe-rwd">
+          <iframe width="700" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=10,+chemin+des+Cigognes+68140+Luttenbach+France&amp;sll=48.599123,7.587081&amp;sspn=1.453135,4.22699&amp;ie=UTF8&amp;hq=&amp;hnear=10+Chemin+des+Cigognes,+68140+Luttenbach-pr%C3%A9s-Munster,+Haut-Rhin,+Alsace&amp;t=m&amp;ll=48.036286,7.123046&amp;spn=0.010044,0.030041&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?f=q&amp;source=embed&amp;hl=fr&amp;geocode=&amp;q=10,+chemin+des+Cigognes+68140+Luttenbach+France&amp;sll=48.599123,7.587081&amp;sspn=1.453135,4.22699&amp;ie=UTF8&amp;hq=&amp;hnear=10+Chemin+des+Cigognes,+68140+Luttenbach-pr%C3%A9s-Munster,+Haut-Rhin,+Alsace&amp;t=m&amp;ll=48.036286,7.123046&amp;spn=0.010044,0.030041&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left">Go to plan</a></small>
+        </div>
+        <ul style="padding-top:10px;">
+          <li>Distance from Strasbourg: 95,0 km, 1 h 14 min</li>
+          <li>Distance from Mulhouse: 59,2 km, 52 min</li>
+          <li>Distance from Freiburg: 74,3 km, 1 h 12 min</li>
+          <li>Distance from Karlsruhe: 179 km, 2 h 4 min</li>
+          <li>Distance from Basel: 85,9 km, 1 h 8 min</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing" id="register">
+        <div class="span12">
+          <h4>I want to register! What should I do?</h4>
+          <p>
+            Take a <a href="http://hacklechalet.eventbrite.fr/" target="_blank">ticket here</a> at Eventbrite. we have <strong>early bird tickets at 40€</strong> until April 29th. After that date the <strong>regular price will be 60€</strong>. Places are <strong>limited to 50 seats</strong> so hurry up!
+          </p>
+          <p style="padding: 40px 0;text-align:center;">
+            <a href="http://hacklechalet.eventbrite.fr/" target="_blank" class="button">I want to buy a ticket now!</a>
+          </p>
+          <p>
+            Price includes:
+            <ul>
+              <li>2 dinners, 2 lunches, 2 breakfasts</li>
+              <li>2 nights in the chalet</li>
+              <li>A lot of fun !</li>
+            </ul>
+          </p>
+          <p>We'll provide sheets so you're not forced to bring your own sleeping bag, BUT, you'd better bring your own extension cord.</p>
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="row-fluid marketing" id="schedule">
+        <div class="span12">
+          <h4>Schedule</h4>
+          <p>
+            <strong>Friday, May 24th</strong>
+            <ul>
+              <li>7pm - 9pm Dinner/Buffet, arrive whenever you can during this time, there will be food for you!</li>
+              <li>9pm - A brief introduction to the hackathon</li>
+              <li>10pm - Team Formation</li>
+              <li>11pm - Competition starts!</li>
+            </ul>
+          </p>
+          <p>
+            <strong>Saturday, May 25th</strong>
+            <ul>
+              <li>9am - Breakfast</li>
+              <li>1pm - Lunch</li>
+              <li>7pm - Dinner</li>
+            </ul>
+          </p>
+          <p>
+            <strong>Sunday, May 26th</strong>
+            <ul>
+              <li>9am - Breakfast</li>
+              <li>12am - Lunch</li>
+              <li>2pm - Demo starts</li>
+              <li>5pm - Winners announced</li>
+              <li>6pm - This is the end...</li>
+            </ul>
+          </p>
+          <p>
+            To demo your hack, you'll have to register on <a href="http://www.hackathon.io">hackathon.io</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row-fluid marketing" id="rules">
+        <div class="span12">
+          <h4>Rules & Prizes</h4>
+          <strong>Rules</strong>
+          <p>
+            <ul>
+              <li>Teams can have from <strike>2 to 5 members</strike> 1 to 5 members.
+                <br/><strong>Even though team can have only 1 member, we really encourage you to form a team before or at the beginning of the event.</strong></li>
+              <li>Hacks can be hardware or software or a combination of both</li>
+              <li>You will be judged on what you make during this weekend</li>
+              <li>2 minute demos, 3 minutes for questions</li>
+              <li>Have fun !</li>
+            </ul>
+          </p>
+          <p>
+            Judges will be announced soon...
+          </p>
+          <strong>Prizes</strong>
+          <p>
+            <ul>
+              <li>1st place: 3 Google Nexus 10 tablets</li>
+              <li>2nd place: 3 Google Nexus 4 phones</li>
+              <li>3rd place: 3 Google Nexus 7 tablets</li>
+              <!-- <li>Best Use of City of Strasbourg's OpenData (<a href="http://www.strasbourg.eu/ma-situation/professionnel/open-data">link</a>): XXX.</li> -->
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="row-fluid marketing" id="sponsors">
+        <div class="span12">
+          <h4>Sponsors</h4>
+          <p>
+            <ul class="thumbnails">
+              <li class="span3">
+                <a href="http://www.sfr.fr" target="_blank">
+                  <img src="img/sfr.png"/>
+                </a>
+              </li>
+              <li class="span3">
+                <a href="http://www.strasbourg.eu" target="_blank">
+                  <img src="img/strasbourgtheeuroptimist.png"/>
+                </a>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="row-fluid marketing" id="contact">
+        <div class="span12">
+          <h4>Contact</h4>
+          <p>Want to be a sponsor? <a href="mailto:hacklechalet@alsacedigitale.org">Contact us!</a></p>
+          <p>For any questions: <a href="mailto:hacklechalet@alsacedigitale.org">hacklechalet@alsacedigitale.org</a></p>
+        </div>
+      </div>
+
+
+      <div class="footer">
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/HackLeChalet" target="_blank">
+              <div class="rounded facebook">
+                <span class="icomoon-facebook"></span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/HackLeChalet" target="_blank">
+              <div class="rounded twitter">
+                <span class="icomoon-twitter"></span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <p>
+          Organized by <a href="http://www.alsacedigitale.org/" target="_blank">Alsace Digitale</a>. Join <a href="http://www.facebook.com/HackSXB" target="_blank">HackSXB</a>, our community initiative around software and hardware hacking.
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-40318795-1', 'hacklechalet.com');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
