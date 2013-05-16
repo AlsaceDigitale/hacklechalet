@@ -9,9 +9,9 @@ def output(position, gravatar_hash, name, tags)
   gravatar_url = "http://www.gravatar.com/avatar/#{gravatar_hash}.png?size=48"
 
   str = "<tr>\n"
-  str << "  <td style='text-align:center;'>#{position}</td>\n"
-  str << "  <td><img src='#{gravatar_url}'</td>\n"
-  str << "  <td>#{name}</td>\n"
+  str << "  <td class='position'>#{position}</td>\n"
+  str << "  <td class='avatar'><img src='#{gravatar_url}'</td>\n"
+  str << "  <td class='name'>#{name}</td>\n"
   str << "  <td>#{tags.join(", ")}</td>\n"
   str << "</tr>\n"
 end
