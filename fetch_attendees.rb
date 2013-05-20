@@ -32,6 +32,7 @@ File.open("_includes/attendees.html", 'w') {|f|
 
   f.write(output("organizer", "139b66112d2e2b4efafac2aefed01c2f", "Yann Klis", %w(ruby rails nodejs)))
   f.write(output("organizer", "1c72bce95176cfcb37de816f5be59dd5", "Yannick Jost", %w(robot embedded python)))
+  f.write(output("jury", "840013d1ba6ddc409f2606cc3423cbeb", "Stéphane Becker", %w(Judge Dredd Here)))
 
   response["attendees"].sort_by{|hsh| hsh["attendee"]["created"] }.each{|hsh|
     attendee_hsh = hsh["attendee"]
