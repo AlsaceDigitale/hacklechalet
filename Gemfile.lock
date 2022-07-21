@@ -9,7 +9,7 @@ GEM
       multi_xml
     multi_json (1.7.3)
     multi_xml (0.5.3)
-    tzinfo (0.3.37)
+    tzinfo (0.3.61)
 
 PLATFORMS
   ruby
